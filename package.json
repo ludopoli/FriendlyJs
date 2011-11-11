@@ -1,0 +1,14 @@
+{
+    "name": "friendlyjs"
+  , "description": "make friendly URLs by stripping out non lating chars, and convert other chars to their latin counterparts"
+  , "version": "0.0.1"
+  , "author": "Vladimir Slavin <vladimirslavin@gmail.com>"
+  , "keywords": ["url", "friendly", "transcription", "multilingual", "localization"]
+  , "dependencies": {}
+  , "main": "./friendly.js"
+  , "engines": { "node": ">= 0.4.0" }
+  , "repository": {
+        "type": "git"
+      , "url": "git://github.com/ludopoli/friendlyjs.git"
+    }
+}
