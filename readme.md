@@ -58,7 +58,7 @@ boom.url('lov e^me@') /=> 'lov-eameo'
 
 ## Credits
 
-- Vladimir Slavin - vladimirslavin@gmail.com - [nakedslavin](http://github.com/nakedslavin
+- Vladimir Slavin - vladimirslavin@gmail.com - [nakedslavin](http://github.com/nakedslavin)
 
 
 ## License
