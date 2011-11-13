@@ -1,0 +1,30 @@
+var assert = require('assert'),
+    fjs = require('./friendly.js'),
+    victim = '!iloveмаmu';
+
+var stripOutNonLatinChars = (function() {
+  assert.equal('-ilove--mu',fjs.friendly().trimNonLatinChars(victim));
+})();
+
+var converNonLatinChars = (function() {
+  assert.equal('!ilovemamu',fjs.friendly().convertToLatin(victim));
+})();
+
+var addOrRemoveAditionalAlphabets = (function() {
+  var f0 = new fjs.friendly();
+  f0.alphabets.symbols = '@-at,$-buck';
+  assert.equal('at-buck',f0.url('@!$'));
+
+})();
+
+// feature for 0.0.2
+var instancesAreIndependent =  (function() {
+  var f1 = new fjs.friendly();
+  var f2 = new fjs.friendly();
+
+  f1.alphabets.symbols = '@-at,$-dollar';
+  f2.alphabets.symbols = '@-fat,$-buck';
+
+  assert.notEqual(f1.url('@$'),f2.url('@$'));
+})();
+
