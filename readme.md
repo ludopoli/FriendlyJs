@@ -3,7 +3,7 @@ FriendlyJs 0.0.1
 
 ## What's FriendlyJs?
 
-Javascript clientside and nodejs library for making friendly URLs by stripping out non lating chars, as well as converting chars in different languages to their latin counterparts.
+Javascript clientside and nodejs library for making friendly URLs by stripping out non latin chars, as well as converting chars in different languages to their latin counterparts.
 
 Using it in a browser is quite simple:
 
